@@ -16,7 +16,7 @@ public class Equipement_type {
 	@Column(name="id_equipement_type")
 	private int idEquipementType;
 	
-	@Column(name="type_equipement")
+	@Column(name="type_equipement", length = 25)
 	private String typeEquipement;
 
 }
