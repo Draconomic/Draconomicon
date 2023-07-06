@@ -31,7 +31,7 @@ public class MessageServiceImpl implements MessageService{
 				.map(p-> {
 					p.setTitre(message.getTitre());
 					p.setMessage(message.getMessage());
-					p.setDatePost(message.getDatePost());
+					// p.setDatePost(message.getDatePost());
 					p.setIdTopic(message.getIdTopic());
 					p.setIdProfil(message.getIdProfil());
 					return messageRepository.save(p); 			

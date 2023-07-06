@@ -23,12 +23,12 @@ import lombok.AllArgsConstructor;
 public class MessageController {
 	private MessageService messageService;
 	
-	@PostMapping("/")
+	@PostMapping()
 	public Message create(@RequestBody Message message) {
 		return messageService.creer(message);
 	}
 	
-	@GetMapping("/")
+	@GetMapping()
 	public List<Message> read(){
 		return messageService.lire();
 	}

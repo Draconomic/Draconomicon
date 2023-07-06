@@ -1,8 +1,10 @@
 package com.cda.API.ProjetFilRouge.modele;
 
-import java.security.Timestamp;
+
+import java.sql.Timestamp;
 
 import org.hibernate.annotations.CreationTimestamp;
+// import org.springframework.cloud.task.timestamp;
 
 // import jakarta.persistence.Entity;
 import jakarta.persistence.*;
@@ -29,9 +31,11 @@ public class Message {
     
     @Column(name="date_post")
     @CreationTimestamp
-	@Temporal(TemporalType.TIMESTAMP)
+	// @Temporal(TemporalType.TIMESTAMP)
 	private Timestamp datePost;
-	
+	// import java.time.ZonedDateTime;
+	// private ZonedDateTime timestamp;
+
     @Column(name="id_topic")
 	private int idTopic;
 	
