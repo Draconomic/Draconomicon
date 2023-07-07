@@ -4,9 +4,7 @@ package com.cda.API.ProjetFilRouge.modele;
 import java.sql.Timestamp;
 
 import org.hibernate.annotations.CreationTimestamp;
-// import org.springframework.cloud.task.timestamp;
 
-// import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 

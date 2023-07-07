@@ -17,7 +17,7 @@ public class Espece {
 
 	// @JoinColumn(name= "id_equipement")
 	// @MapsId
-	@Column(name="id_espace", length = 25)
+	@Column(name="name_espace", length = 25)
 	private String nameEspece;
 
     @Column(name="image", length = 25)

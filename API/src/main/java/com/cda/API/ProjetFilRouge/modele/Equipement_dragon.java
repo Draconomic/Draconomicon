@@ -15,15 +15,18 @@ public class Equipement_dragon {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idEquipementDragon;
 
-	@Getter
-	// @JoinColumn(name= "id_equipement")
-	// @MapsId
 	@Column(name="id_equipement")
+	@JoinTable(
+			name="equipement",
+			joinColumns= {@JoinColumn(name="nom_equipement")}
+			)
 	private int idEquipement;
 	
-	// @JoinColumn(name= "id_dragon")
-	// @MapsId
 	@Column(name="id_dragon")
+	@JoinTable(
+			name="dragon",
+			joinColumns= {@JoinColumn(name="name")}
+			)
 	private int idDragon;
 
 }
