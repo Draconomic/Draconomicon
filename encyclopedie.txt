@@ -1,0 +1,20 @@
+[
+  {
+    "id_encyclopedie": 1,
+    "titre": "Wyvern",
+    "contenu": "Description de la wyverne",
+    "id_espece": 1
+  },
+  {
+    "id_encyclopedie": 2,
+    "titre": "Amphiptere",
+    "contenu": "L’amphiptère est une créature imaginaire, représentée sous la forme d'un serpent ailé.",
+    "id_espece": 1
+  },
+  {
+    "id_encyclopedie": 3,
+    "titre": "Dragon",
+    "contenu": "Description du dragon",
+    "id_espece": 1
+  }
+]
