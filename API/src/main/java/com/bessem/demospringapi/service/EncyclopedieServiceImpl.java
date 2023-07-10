@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+// La couche service est une couche intermédiaire entre la couche de présentation et la couche d’accès aux données.
+// Cette couche contient les traitements métiers spécifiques à l’application.
 @Service
 @AllArgsConstructor
 public class EncyclopedieServiceImpl implements EncyclopedieService{

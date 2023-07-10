@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
+@Entity // permet de mappé l'objet avec la base donnée
 @Table(name = "ENCYCLOPEDIE")
 @Getter
 @Setter
