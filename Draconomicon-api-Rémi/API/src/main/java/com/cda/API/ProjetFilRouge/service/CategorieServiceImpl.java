@@ -11,10 +11,10 @@ import lombok.AllArgsConstructor;
 
 @Service
 @AllArgsConstructor
-public class CategorieServiceImpl implements CategorieService{
+public class CategorieServiceImpl implements CategorieService {
 
 	private CategorieRepository categorieRepository;
-	
+
 	@Override
 	public Categorie creer(Categorie categorie) {
 		return categorieRepository.save(categorie);
@@ -28,20 +28,20 @@ public class CategorieServiceImpl implements CategorieService{
 	@Override
 	public Categorie modifier(Long id_categorie, Categorie categorie) {
 		return categorieRepository.findById(id_categorie)
-				.map(p-> {
+				.map(p -> {
 					p.setTitre(categorie.getTitre());
-					p.setMessage(categorie.getMessage());
+					p.setCategorie(categorie.getCategorie());
 					// p.setDatePost(categorie.getDatePost());
 					p.setIdTopic(categorie.getIdTopic());
 					p.setIdProfil(categorie.getIdProfil());
-					return categorieRepository.save(p); 			
-				}).orElseThrow(() -> new RuntimeException("Espèce non trouvé"));
+					return categorieRepository.save(p);
+				}).orElseThrow(() -> new RuntimeException("Catégorie non trouvé"));
 	}
 
 	@Override
 	public String supprimer(Long id_categorie) {
 		categorieRepository.deleteById(id_categorie);
-		return "Message supprimé";
+		return "Catégorie supprimé";
 	}
 
 }
